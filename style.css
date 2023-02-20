@@ -1,0 +1,202 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex; /*pantalla flexible*/
+    justify-content: flex-end; /*contenido justificado, flex end, mandar al fondo*/
+}
+
+a{
+    text-decoration: none; /*para quitar la raya de hipervinculo*/
+    cursor: pointer; /**/
+}
+
+header nav  .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex; /*para que se vaya ajustando automaticamente si mueves la pagina*/
+    list-style: none; /*estilo de lista ninguno*/
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: black;
+
+}
+
+nav .nav-right-section img {
+    border-radius: 80px;
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url('https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 27px;
+    height: 27px;
+}
+
+main{
+    margin-top: 80px; /*subir la imagen*/
+    text-align: center; /*mover al centro*/
+}
+
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;/*que el logo se mueva junto con la pagina*/
+    margin-bottom: 35px;
+}
+
+main .main-logo img {
+    width: 335px;
+    height: 110px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+  width: 525px;
+  border-radius: 100px ; 
+  border: 1px solid #dfe1e5  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-input input{
+    width: 420px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover { /*para el efecto de sombra*/
+    box-shadow: 0  1px  6px  0 #20212447    ;
+
+}
+
+main .main-input .search-icon {
+    background-image:url('https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    
+}
+
+main .main-input .micro-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    
+}
+
+main .main-input .camera-icon{
+    background-image: url('https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin: 9px;
+    cursor: pointer;
+
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main  .main-buttons div{
+    display: inline-block; /*ponerle uno a lado de otro*/
+}
+
+main .main-buttons button{
+    height: 36px; /*para engrosar el cuadro*/
+    background-color: #f8f9fa;
+    border: 0;/*quitar el borde*/
+    font-size: 14px;
+    color: #202124;
+    border-radius: 6px; /*para redondear el recuadro*/
+    padding: 0 15px; /*las letras se despegan de las orillas*/
+    margin-right: 12px; /*separar los recuadros para que no esten muy pegados*/
+
+}
+
+main .main-buttons button:hover{ /*para sombrear es hover*/
+    border: 1px solid #c6c6c6; /*para que se marque el contorno cuando el pulsor se encuentre cerca*/
+    box-shadow: 0 1px 1px 0 #000001; /*sombreado*/
+    color: #222; /*color del sombreado*/
+    cursor: pointer; /*que el cursor se vuelve manita*/
+
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;  
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4; 
+    
+    
+
+}
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex; 
+    padding-left: 0;
+}
+
+footer .footer-up {
+    justify-self:left;
+    
+    
+}
+
+footer .footer-left {
+    justify-self: left; /*alinearse a la izquierda*/
+    
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a { 
+margin: 10px; /*separa las palabras*/
+color: #70757A;
+background-size: 0px;
+text-decoration: none;
+font-size: 15px;
+
+}
